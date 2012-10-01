@@ -1,6 +1,6 @@
 # Author:: Guilhem Lettron (<guilhem.lettron@youscribe.com>)
-# Cookbook Name:: zabbix
-# Recipe:: agent_ztc
+# Cookbook Name:: ztc
+# Recipe:: default
 #
 # Apache 2.0
 #
