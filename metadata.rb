@@ -11,3 +11,5 @@ supports          "centos", ">= 5.0"
 
 depends "mercurial"
 depends "python"
+
+recommends "zabbix"
