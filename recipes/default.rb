@@ -18,15 +18,12 @@ end
 execute "install ztc" do
   cwd "#{Chef::Config[:file_cache_path]}/ztc"
   command "python setup.py install"
-#  action :nothing
+  action :nothing
 end
 
-easy_install_package "psycopg2" do
-  ignore_failure true
-end
-easy_install_package "pymongo" do
-  ignore_failure true
-end
+package "libpq-dev"
+easy_install_package "psycopg2"
+easy_install_package "pymongo" 
 
 case node['platform']
 when "ubuntu","debian"
