@@ -33,3 +33,9 @@ when "redhat","centos","fedora"
 else
   package "lm-sensors"
 end
+
+sudo "ztc" do
+  user "zabbix"
+  commands ["/opt/ztc/bin/vfs_dev.py"]
+  nopasswd true
+end
